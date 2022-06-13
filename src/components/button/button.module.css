@@ -1,0 +1,15 @@
+.btnPrimary {
+  min-width: 190px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.2;
+  border-radius: 30px;
+  border: 2px solid #9653fb;
+}
+
+.btnPrimary:hover {
+  background-color: #9653fb;
+}

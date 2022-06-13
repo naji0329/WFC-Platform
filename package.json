@@ -1,0 +1,32 @@
+{
+  "name": "wfc-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "build:watch": "postcss src/styles/tailwind.css -o src/styles/main.css --watch",
+    "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
+  },
+  "dependencies": {
+    "@walletconnect/web3-provider": "^1.5.2",
+    "autoprefixer": "^10.3.1",
+    "next": "11.0.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.7",
+    "web3": "^1.5.0",
+    "web3modal": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
+  }
+}
