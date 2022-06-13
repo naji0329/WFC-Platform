@@ -6,6 +6,7 @@ import { useWallet } from "hooks";
 
 import Logo from "assets/images/logo.png";
 import WFCIcon from "assets/images/wfc_white.png";
+import Setting from "assets/images/setting.png";
 import { useRouter } from 'next/router'
 
 export const Header = () => {
@@ -93,8 +94,17 @@ export const Header = () => {
                     <p className="text-white text-3xl font-bold">WFC Platform</p>
                   </div>
                 </Link>
-                <div className="text-white text-xl">
-                  <button className="bg-green-400 text-black font-medium px-6 py-2 text-sm">Connect your walet</button>
+                <div className="text-white text-xl relative">
+                  <div className="flex items-center gap-2">
+                    <button className="bg-green-400 text-black font-medium px-6 py-2 text-sm">Connect your walet</button>
+                    <Image src={Setting} alt="setting" width={30} height={30}  />
+                  </div>
+
+                  {/* <div className="absolute top-12 right-0">
+                    <div className="border border-green-400">
+
+                    </div>
+                  </div> */}
                 </div>
               </div>
             
