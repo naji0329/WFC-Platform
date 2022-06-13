@@ -25,7 +25,7 @@ export const Header = () => {
   
   return (
     <>
-      <nav className='px-4 py-4 lg:h-20 m-auto absolute top-0 left-0 w-full'>
+      <nav className='px-4 py-4 lg:h-20 m-auto absolute top-0 left-0 w-full border-b border-gray-500'>
         {
           router.asPath == "/" ? (
             <>

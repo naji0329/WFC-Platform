@@ -6,38 +6,39 @@ import { useWallet } from "hooks";
 
 import { useRouter } from 'next/router'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Sidebar = () => {
   return (
-    <>
-      <div className="w-64 text-white px-4 mt-10">
+    <div className="border-r w-max border-gray-500 pt-5 h-screen">
+      <div className="text-white px-4">
         <p className="text-sm mb-4 mt-8">YOUR MONEY</p>
         <ul className="pl-4 font-bold cursor-pointer">
-          <li className="mt-2">Dashboard</li>0
-          <li className="mt-2">Swap</li>
-          <li className="mt-2">Transaction History</li>
-          <li className="mt-2">NFT Galary</li>
-          <li className="mt-2">Earning from votes</li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon={"fa-solid fa-chart-simple"} className="h-4" />Dashboard</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon={"fa-solid fa-arrows-rotate"} className="h-4" />Swap</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-clock-rotate-left" className="h-4" />Transaction History</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-icons" className="h-4" />NFT Galary</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-lines-leaning" className="h-4" />Earning from votes</p></li>
         </ul>
 
         <p className="text-sm mb-4 mt-8">DISCOVER SERVICE LINES</p>
         <ul className="pl-4 font-bold cursor-pointer">
-          <li className="mt-2">S1 - Medical Research</li>
-          <li className="mt-2">S2 - Natural Disasters</li>
-          <li className="mt-2">S3 - Innovative Startups</li>
-          <li className="mt-2">Help request</li>
-          <li className="mt-2">Reserve Fund</li>
-          <li className="mt-2">Last projects</li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-circle-plus" className="h-4" />S1 - Medical Research</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-book-atlas" className="h-4" />S2 - Natural Disasters</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-book-journal-whills" className="h-4" />S3 - Innovative Startups</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-hand-holding-hand" className="h-4" />Help request</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-filter-circle-dollar" className="h-4" />Reserve Fund</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-bars-progress" className="h-4" />Last projects</p></li>
         </ul>
 
         <p className="text-sm mb-4 mt-8">GET HELP / PARTICIPATE</p>
         <ul className="pl-4 font-bold cursor-pointer">
-          <li className="mt-2">Docs</li>
-          <li className="mt-2">Join Discord</li>
-          <li className="mt-2">Make a suggestion</li>
-          <li className="mt-2">DAO </li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-book" className="h-4" />Docs</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-link" className="h-4" />Join Discord</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-bookmark" className="h-4" />Make a suggestion</p></li>
+          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-outdent" className="h-4" />DAO</p></li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
