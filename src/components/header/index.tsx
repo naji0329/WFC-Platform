@@ -15,20 +15,13 @@ export const Header = () => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("asdfasdf", wallet);
+
   }, [wallet]);
-
-
 
   const handleClick = () => {
     setVisible(!visible);
   };
-
-
-  function getPath() {
-  }
-
-
+  
   return (
     <>
       <nav className='px-4 py-4 lg:h-20 m-auto absolute top-0 left-0 w-full'>
@@ -101,7 +94,7 @@ export const Header = () => {
                   </div>
                 </Link>
                 <div className="text-white text-xl">
-                  Connected with: {wallet}
+                  <button className="bg-green-400 text-black font-medium px-6 py-2 text-sm">Connect your walet</button>
                 </div>
               </div>
             
