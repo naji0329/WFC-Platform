@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: [],
@@ -12,25 +12,25 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    colors: {
-      primary: "#5701b4",
-      transparent: "transparent",
-      current: "currentColor",
+    // colors: {
+    //   primary: "#5701b4",
+    //   transparent: "transparent",
+    //   current: "currentColor",
 
-      black: colors.black,
-      white: colors.white,
-      gray: colors.coolGray,
-      red: colors.red,
-      yellow: colors.amber,
-      green: colors.emerald,
-      blue: colors.blue,
-      indigo: colors.indigo,
-      purple: colors.violet,
-      pink: colors.pink,
-      "brightPink": "#9651fe",
+    //   black: colors.black,
+    //   white: colors.white,
+    //   gray: colors.coolGray,
+    //   red: colors.red,
+    //   yellow: colors.amber,
+    //   green: colors.emerald,
+    //   blue: colors.blue,
+    //   indigo: colors.indigo,
+    //   purple: colors.violet,
+    //   pink: colors.pink,
+    //   "brightPink": "#9651fe",
 
-      "text-primary": "var(--primary)",
-    },
+    //   "text-primary": "var(--primary)",
+    // },
     spacing: {
       px: "1px",
       0: "0px",
