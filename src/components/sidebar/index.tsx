@@ -27,8 +27,7 @@ export const Sidebar = () => {
       <div className="text-white px-4">
         <p className="text-sm mb-4 mt-8">YOUR MONEY</p>
         <ul className="pl-4 font-bold cursor-pointer">
-          <li className="mt-2">
-              <Link href="/Dashboard"><p className="flex items-center gap-2"><FontAwesomeIcon icon={"fa-solid fa-chart-simple"} className="h-4" />Dashboard</p></Link></li>
+          <li className="mt-2"><Link href="/Dashboard"><p className="flex items-center gap-2"><FontAwesomeIcon icon={"fa-solid fa-chart-simple"} className="h-4" />Dashboard</p></Link></li>
           <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon={"fa-solid fa-arrows-rotate"} className="h-4" />Swap</p></li>
           <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-clock-rotate-left" className="h-4" />Transaction History</p></li>
           <li className="mt-2"><p className="flex items-center gap-2" style={{color: randomeColor}} ><FontAwesomeIcon icon="fa-solid fa-icons" className="h-4" />NFT Galary</p></li>
@@ -47,7 +46,7 @@ export const Sidebar = () => {
 
         <p className="text-sm mb-4 mt-8">GET HELP / PARTICIPATE</p>
         <ul className="pl-4 font-bold cursor-pointer">
-          <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-book" className="h-4" />Docs</p></li>
+          <li className="mt-2"><Link href="/Faqs"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-book" className="h-4" />FAQs</p></Link></li>
           <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-link" className="h-4" />Join Discord</p></li>
           <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-bookmark" className="h-4" />Make a suggestion</p></li>
           <li className="mt-2"><p className="flex items-center gap-2"><FontAwesomeIcon icon="fa-solid fa-outdent" className="h-4" />DAO</p></li>
