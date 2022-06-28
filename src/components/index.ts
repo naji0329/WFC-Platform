@@ -5,4 +5,4 @@ export * from "./pageContainer";
 export * from "./button";
 export * from "./modal";
 export * from "./stakingModal";
-export * from "./Sidebar";
+export * from "./sidebar";
