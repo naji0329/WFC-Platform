@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Sidebar = () => {
   const [randomeColor, setRandomColor] = useState("#857d2f");
+  const router = useRouter();
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -30,7 +31,11 @@ export const Sidebar = () => {
         <ul className="pl-4 font-bold cursor-pointer">
           <li className="mt-2">
             <Link href="/Dashboard" passHref>
-              <p className="flex items-center gap-2">
+              <p
+                className={`flex items-center gap-2 ${
+                  router.pathname == "/Dashboard" ? "text-purple-600" : ""
+                }`}
+              >
                 {/* <FontAwesomeIcon
                   icon={"fa-solid fa-chart-simple"}
                   className="h-4"
@@ -42,7 +47,11 @@ export const Sidebar = () => {
           <li className="mt-2">
             <p className="flex items-center gap-2">
               <Link href="/Swap" passHref>
-                <p className="flex items-center gap-2">
+                <p
+                  className={`flex items-center gap-2 ${
+                    router.pathname == "/Swap" ? "text-purple-600" : ""
+                  }`}
+                >
                   {/* <FontAwesomeIcon
                     icon={"fa-solid fa-arrows-rotate"}
                     className="h-4"
@@ -85,26 +94,46 @@ export const Sidebar = () => {
         <ul className="pl-4 font-bold cursor-pointer">
           <li className="mt-2">
             <Link href="/MedicalResearch" passHref>
-              <p className="flex items-center gap-2">
+              <p
+                className={`flex items-center gap-2 ${
+                  router.pathname == "/MedicalResearch" ? "text-purple-600" : ""
+                }`}
+              >
                 {/* <FontAwesomeIcon icon="fa-solid fa-circle-plus" className="h-4" /> */}
                 S1 - Medical Research
               </p>
             </Link>
           </li>
           <li className="mt-2">
-            <p className="flex items-center gap-2">
-              {/* <FontAwesomeIcon icon="fa-solid fa-book-atlas" className="h-4" /> */}
-              S2 - Natural Disasters
-            </p>
+            <Link href="/NaturalDisasters" passHref>
+              <p
+                className={`flex items-center gap-2 ${
+                  router.pathname == "/NaturalDisasters"
+                    ? "text-purple-600"
+                    : ""
+                }`}
+              >
+                {/* <FontAwesomeIcon icon="fa-solid fa-book-atlas" className="h-4" /> */}
+                S2 - Natural Disasters
+              </p>
+            </Link>
           </li>
           <li className="mt-2">
-            <p className="flex items-center gap-2">
-              {/* <FontAwesomeIcon
+            <Link href="/InnovativeStartups" passHref>
+              <p
+                className={`flex items-center gap-2 ${
+                  router.pathname == "/InnovativeStartups"
+                    ? "text-purple-600"
+                    : ""
+                }`}
+              >
+                {/* <FontAwesomeIcon
                 icon="fa-solid fa-book-journal-whills"
                 className="h-4"
               /> */}
-              S3 - Innovative Startups
-            </p>
+                S3 - Innovative Startups
+              </p>
+            </Link>
           </li>
           <li className="mt-2">
             <p className="flex items-center gap-2">
@@ -138,8 +167,12 @@ export const Sidebar = () => {
         <p className="text-sm mb-4 mt-8">GET HELP / PARTICIPATE</p>
         <ul className="pl-4 font-bold cursor-pointer">
           <li className="mt-2">
-            <Link href="/Faqs">
-              <p className="flex items-center gap-2">
+            <Link href="/Faqs" passHref>
+              <p
+                className={`flex items-center gap-2 ${
+                  router.pathname == "/Faqs" ? "text-purple-600" : ""
+                }`}
+              >
                 {/* <FontAwesomeIcon icon="fa-solid fa-book" className="h-4" /> */}
                 FAQs
               </p>
